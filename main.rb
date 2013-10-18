@@ -1,6 +1,6 @@
 require "./racional.rb"
 
-p1 = Fraccion.new(5,4)
+p1 = Fraccion.new(8,2)
 
 
 

@@ -14,6 +14,7 @@ end
 def to_s
 
 "(#{@n}/#{@d})"
+
 end
 
 def suma(n, d)
