@@ -13,6 +13,7 @@ end
 
 puts gcd(6,3)
 
+//devuelve 6 ( el primer valor)
 
 //En la condicion de parada del while debe ser distinto de 0 y no igual a 0, sino devuelve siempre el primer valor.
 
@@ -26,6 +27,8 @@ def gcd(u, v)
 end
 
 puts gcd(6,3)
+
+//De esta forma devuelve de forma correcta el mcd de 6 y 3 que es 3.
 
    2.2.) ¿Qué comandos del depurador utilizó para detectarlo? Describa la sesión de depuración.
 
@@ -53,7 +56,7 @@ gcd.rb:6:  u
 3
 
 
-// Los comandos utilizados son el b 4 para crear un breakpoint dentro del bucle y n para ir a la siguiente linea.
+// Los comandos utilizados son ruby -rdebug gcd.rb para iniciar el debugger, el b 4 para crear un breakpoint en la linea 4 dentro del bucle y n para ir a la siguiente linea.
 
    2.3.) Escriba la dirección 'HTTP' del repositorio que contiene el desarrollo de su práctica.
 

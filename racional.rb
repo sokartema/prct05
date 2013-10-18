@@ -5,112 +5,118 @@ class Fraccion
 
 attr_reader :n , :d
 
-def initialize(n,d)
+	def initialize(n,d)
 
-@n,@d = n, d
+	@n,@d = n, d
 
-end
+	end
 
-def to_s
+	def to_s
 
-"(#{@n}/#{@d})"
+	"#{@n}/#{@d}"
 
-end
+	end
 
-def suma(n, d)
+	def suma(n, d)
 
-puts "SUMA"
+	puts "SUMA"
 
-mcm= ((@d * d)/ gcd(@d , d))
+	mcm= ((@d * d)/ gcd(@d , d))
 
-n1 =(mcm / @d) * @n
+	n1 =(mcm / @d) * @n
 
-n2 =(mcm / d) * n
+	n2 =(mcm / d) * n
 
-n1 += n2
+	n1 += n2
 
-puts " #{n1} / #{mcm} "
+	puts "#{n1}/#{mcm}"
 
-mcd = gcd(n1, mcm)
+	mcd = gcd(n1, mcm)
 
-n1 = n1/mcd
+	n1 = n1/mcd
 
-mcm = mcm/mcd
+	mcm = mcm/mcd
 
-puts "Suma simplificada"
+	puts "Suma simplificada"
 
-puts " #{n1} / #{mcm} "
+	puts "#{n1}/#{mcm}"
 
-end
-def resta(n,d)
+	"#{n1}/#{mcm}"
 
-puts "RESTA"
+	end
 
-mcm= ((@d * d)/ gcd(@d , d))
+	def resta(n,d)
 
-n1 =(mcm / @d) * @n
+	puts "RESTA"
 
-n2 =(mcm / d) * n
+	mcm= ((@d * d)/ gcd(@d , d))
 
-n1 -= n2
+	n1 =(mcm / @d) * @n
 
-puts " #{n1} / #{mcm} "
+	n2 =(mcm / d) * n
 
-mcd = gcd(n1, mcm)
+	n1 -= n2
 
-n1 = n1/mcd
+	puts "#{n1}/#{mcm}"
 
-mcm = mcm/mcd
+	mcd = gcd(n1, mcm)
 
-puts "Resta simplificada"
+	n1 = n1/mcd
 
-puts " #{n1} / #{mcm} "
+	mcm = mcm/mcd
 
+	puts "Resta simplificada"
 
-end
-def producto(n,d)
+	puts "#{n1}/#{mcm}"
 
-puts "PRODUCTO"
+	"#{n1}/#{mcm}"
 
-n1 = @n * n
-n2 = @d * d
+	end
 
-puts "#{n1} / #{n2}"
+	def producto(n,d)
 
-mcd = gcd(n1, n2)
+	puts "PRODUCTO"
 
-n1 = n1/mcd
+	n1 = @n * n
+	n2 = @d * d
 
-n2 = n2/mcd
+	puts "#{n1}/#{n2}"
 
-puts "Producto simplificado"
+	mcd = gcd(n1, n2)
 
-puts " #{n1} / #{n2} "
+	n1 = n1/mcd
 
+	n2 = n2/mcd
 
+	puts "Producto simplificado"
 
-end
-def division(n,d)
+	puts "#{n1}/#{n2}"
 
-puts "DIVISION"
+	"#{n1}/#{n2}"
 
-n1 = @n * d
-n2 = @d * n
+	end
 
-puts "#{n1} / #{n2}"
+	def division(n,d)
 
-mcd = gcd(n1, n2)
+	puts "DIVISION"
 
-n1 = n1/mcd
+	n1 = @n * d
+	n2 = @d * n
 
-n2 = n2/mcd
+	puts "#{n1}/#{n2}"
 
-puts "Division simplificada"
+	mcd = gcd(n1, n2)
 
-puts " #{n1} / #{n2} "
+	n1 = n1/mcd
 
+	n2 = n2/mcd
 
-end
+	puts "Division simplificada"
+
+	puts "#{n1}/#{n2}"
+
+	"#{n1}/#{n2}"
+	end
 
 end
 
